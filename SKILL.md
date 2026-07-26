@@ -37,6 +37,8 @@ description: "Maintain a project's canonical truth across long-running AI collab
 2. 搜索表示当前方案、候选变更、重要决策、实施状态、验证和来源的现有文件。
 3. 审计或恢复时先检查版本控制状态，识别未提交、未跟踪和并发修改；写操作前再次检查相关文件，保留用户已有改动。
 4. 验证每个权威候选的本地适用性：检查它声明的目录和链接真实存在、项目名称与术语一致、存在采用或确认依据。文件自称“当前生效”不能单独证明权威。
+   - 例外：用户明确要求按某份本地规则开始接管时，可把它视为“已采用的启动契约”，即使目标目录尚未创建。
+   - 启动契约只授权采用治理方法；不自动确认从旧材料推导出的产品结论、当前 Gate、完成状态或归档清单。
 5. 对活跃工作区记录关键入口的修改时间、大小或哈希；形成结论前复核。审计期间发生变化时，标记快照不稳定，不混合不同时间点的内容。
 6. 建立临时权威映射：
 
@@ -54,6 +56,7 @@ description: "Maintain a project's canonical truth across long-running AI collab
 8. 如果规则缺失或互相冲突，先报告冲突，不自行选一套规则覆盖项目。
 
 需要判断信息路由和冲突时，读取 [references/authority-and-routing.md](references/authority-and-routing.md)。
+需要采用本地规则、迁移目录或批量归档时，读取 [references/adoption-and-migration.md](references/adoption-and-migration.md)。
 
 ## 第二步：选择最小治理结构
 
@@ -73,7 +76,11 @@ description: "Maintain a project's canonical truth across long-running AI collab
 3. 对照当前权威位置，分类为：已覆盖、可吸收、冲突、候选、需核验、无长期价值。
 4. 输出写入 Preview，列出每个结论的目标文件、目标章节、理由、来源和预期状态。
 5. 单独列出拟新建、修改、移动、归档或删除的文件。
-6. 等待用户确认会改变目标方案、确认状态、目录结构或来源处置的内容。
+6. 提供两种文件处置方案：
+   - 保守整理：建立新结构、来源映射和索引，原文件留在原处。
+   - 迁移归档：建立新结构并把已吸收材料移动到归档位置；适合用户明确希望清理散落文件的任务。
+7. 分开确认四类授权：采用治理规则、确认内容结论、采用当前 Gate/状态、文件处置方案及范围。不得用其中一种确认替代另一种。
+8. 等待用户确认会改变目标方案、确认状态、目录结构或来源处置的内容。
 
 处理来源材料前读取 [references/source-intake-and-archive.md](references/source-intake-and-archive.md)。需要标准确认卡时复制并调整 [assets/templates/intake-preview.md](assets/templates/intake-preview.md)。
 
@@ -93,6 +100,9 @@ description: "Maintain a project's canonical truth across long-running AI collab
 → 检查链接、状态和唯一权威
 ```
 
+- 采用迁移归档时先固定清单；可以按确认的文件清单移动，也可以按用户明确批准且已枚举内容的目录整体移动。混有范围外运行资产时，只移动范围内材料。
+- 不按扩展名判断材料性质。HTML、CSS、脚本、JSON、图片等既可能是当前实现，也可能是历史原型或大型证据；先检查生命周期、当前引用、运行入口和替代关系。
+- 先写新位置并验证覆盖与链接，再执行归档；归档失败时保留源文件并报告，不自行改为复制、删除或扩大范围。
 - 未确认问题继续留在候选或提案位置。
 - 实施级待定项可留在正式变更，但会改变目标方案的问题必须退回讨论。
 - 当前方案只保存已确认结论及必要来源链接，不保存审批流水或开发日志。
@@ -116,6 +126,8 @@ description: "Maintain a project's canonical truth across long-running AI collab
 8. 检查来源材料已完成提取、映射和处置记录。
 9. 重复运行同一整理流程时，不得产生重复 Decision、变更、索引条目或归档副本。
 10. 涉及代码现实的声明必须依据本轮新鲜检查；历史测试结果只能标记为历史证据。
+11. 对照操作前清单，确认没有移动未列入 Preview 的文件、目录或运行资产。
+12. 实际归档范围必须与来源登记范围一致；整体移动的来源包必须整体登记，不能只登记其中一份说明文档。
 
 恢复接续、审计链接和制作交付检查时，读取 [references/audit-and-continuation.md](references/audit-and-continuation.md)。
 
