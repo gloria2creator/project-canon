@@ -1,0 +1,4 @@
+interface:
+  display_name: "Project Canon"
+  short_description: "保障长期 AI 协作项目的唯一事实、变更状态、证据和接续入口"
+  default_prompt: "Use $project-canon to identify the authoritative project state and prepare a safe writeback Preview."
