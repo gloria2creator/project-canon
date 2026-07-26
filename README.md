@@ -2,7 +2,7 @@
 
 <h3><s>屎山项目超度手册</s></h3>
 
-<h1>Project Canon</h1>
+<h1>Project Canon · Agent Skill</h1>
 
 <p><strong>Maintain a project's canonical truth across long-running AI collaboration.</strong></p>
 
