@@ -6,7 +6,7 @@
 
 <h1>Project Canon · Agent Skill</h1>
 
-<p><strong>Maintain a project's canonical truth across long-running AI collaboration.</strong></p>
+<p><strong>Agent Skill for long-running AI coding projects: maintain one source of truth, reconcile docs with code, track decisions, archive stale plans, and resume after context loss.</strong></p>
 
 <p>Keep one traceable source of truth for project decisions, delivery status, evidence, and continuation.</p>
 
@@ -18,9 +18,15 @@
 [![Agent Skill](https://img.shields.io/badge/Agent-Skill-5B5BD6)](SKILL.md)
 [![Language](https://img.shields.io/badge/docs-English-blue.svg)](README.en.md)
 
-A project may contain several documents called “final.” The newest file might only be an AI-generated proposal. Some code may already exist without an accepted target, while last week's passing tests say nothing about today's working tree.
+Working with AI on a project for weeks, you often end up with:
 
-**Project Canon** is a governance Skill for long-running AI-assisted projects. It helps an Agent locate the project's existing authoritative entry points, separate proposals from accepted decisions, changes, delivery status, and evidence, and safely resume work after context loss.
+- three documents all called “final plan”;
+- AI not knowing which version is the real one;
+- abandoned designs coming back to life in the next chat;
+- code, plans, and verification status pretending to agree;
+- everything reopening for discussion because you switched to a new session.
+
+**Project Canon** is a governance Skill for long-running AI coding projects. It helps an Agent locate the project's existing authoritative entry points, separate proposals from accepted decisions, changes, delivery status, and evidence, and safely resume work after context loss.
 
 It does not invent truth for the project. It maintains and traces facts the project has actually accepted.
 
@@ -56,6 +62,16 @@ Where should work resume?
 | Resume | “Continue the previous work” | Re-read project entry points, active changes, workspace state, and fresh verification |
 
 > Audits are read-only by default. Takeovers begin with a Preview. Writes require authorization.
+
+## Before and after
+
+| Without Project Canon | With Project Canon |
+| --- | --- |
+| Multiple "final" plans compete for authority | One current plan links to decisions, changes, and evidence |
+| AI resumes from chat memory | AI re-reads the project's actual state each time |
+| Stale documents resurface as truth | Finished materials are archived and mapped |
+| "Implemented" is confused with "verified" | Each status has its own location and evidence |
+| Every new session repeats old decisions | Existing decisions are preserved and auditable |
 
 ## Core model
 
