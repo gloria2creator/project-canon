@@ -1,4 +1,14 @@
-# Project Canon
+<div align="center">
+
+<h3><s>屎山项目超度手册</s></h3>
+
+<h1>Project Canon</h1>
+
+<p><strong>Maintain a project's canonical truth across long-running AI collaboration.</strong></p>
+
+<p>在长期 AI 协作中，维护项目唯一有效的事实、决策、实施状态与接续入口。</p>
+
+</div>
 
 > **让 AI 记住项目真正已经决定了什么，而不是记住上一次聊天说了什么。**
 
