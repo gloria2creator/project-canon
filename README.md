@@ -1,5 +1,7 @@
 <div align="center">
 
+简体中文 | <a href="README.en.md">English</a>
+
 <h3><s>屎山项目超度手册</s></h3>
 
 <h1>Project Canon · Agent Skill</h1>
@@ -229,6 +231,7 @@ Project Canon 不是：
 ```text
 project-canon/
 ├─ README.md
+├─ README.en.md
 ├─ SKILL.md
 ├─ agents/
 │  └─ openai.yaml
