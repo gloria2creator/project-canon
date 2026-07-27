@@ -107,6 +107,8 @@ description: "Maintain a project's canonical truth across long-running AI collab
 - 实施级待定项可留在正式变更，但会改变目标方案的问题必须退回讨论。
 - 当前方案只保存已确认结论及必要来源链接，不保存审批流水或开发日志。
 - 实施状态和验证证据写入交付位置，不写入当前方案。
+- 对 Bug 排查等进行中工作，在项目已有交付入口维护同一条记录，覆盖发现、排查、修复、验证和关闭；只在事实、授权、实施、验证或阻塞发生实质变化时追加检查点，不逐轮复制聊天。
+- 修复只是恢复已确认行为时，不必新建 Change；修复改变目标方案、正式范围或重要取舍时，再分别路由到 Change、Decision 或当前方案。
 - 项目已有模板时沿用项目模板；没有模板且确有新建需要时，才使用：
   - [assets/templates/decision.md](assets/templates/decision.md)
   - [assets/templates/change.md](assets/templates/change.md)
