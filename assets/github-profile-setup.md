@@ -1,6 +1,6 @@
 # GitHub 仓库设置速查
 
-> 下面这些需要在 GitHub 仓库页面手动填写（Settings / About / Social preview / Releases）。
+> 下面这些需要在 GitHub 仓库页面手动填写（Settings / About / Releases）。
 > README 已上传，此处不再涉及 README 内容修改。
 
 ---
@@ -45,17 +45,7 @@ markdown
 
 ---
 
-## 3. Social Preview
-
-文件：`assets/social-preview.jpg`
-
-- 尺寸：1280 × 640
-- 大小：163.8 KB（小于 1 MB 限制）
-- 上传路径：Repository → Settings → Social preview → Edit
-
----
-
-## 4. Release v1.0.0
+## 3. Release v1.0.0
 
 ### Tag
 
@@ -111,10 +101,3 @@ git clone https://github.com/gloria2creator/project-canon.git \
 - 适配更多 Agent 平台
 - 根据反馈迭代模板和流程
 ```
-
----
-
-## 5. 分享配图
-
-- 横版（GitHub / X / 即刻）：`assets/social-preview.jpg`（1280 × 640）
-- 方版（小红书 / 微信朋友圈）：`assets/share-card-square.jpg`（1080 × 1080）
